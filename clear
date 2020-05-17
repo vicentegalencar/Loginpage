@@ -1,0 +1,323 @@
+[1mdiff --git a/atividadeteste.html b/atividadeteste.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0cf07bf[m
+[1m--- /dev/null[m
+[1m+++ b/atividadeteste.html[m
+[36m@@ -0,0 +1,45 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html>[m
+[32m+[m[32m<head>[m
+[32m+[m	[32m<title>Evolutivo Vestibulares</title>[m
+[32m+[m	[32m<link rel="stylesheet" type="text/css" href="vicente.css">[m
+[32m+[m	[32m<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">[m
+[32m+[m	[32m<script src="https://kit.fontawesome.com/a81368914c.js"></script>[m
+[32m+[m	[32m<meta name="viewport" content="width=device-width, initial-scale=1">[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m	[32m<img class="wave" src="" >[m
+[32m+[m	[32m<div class="container">[m
+[32m+[m		[32m<div class="img">[m
+[32m+[m			[32m<img src="img/Evolutivo.png">[m
+[32m+[m		[32m</div>[m
+[32m+[m		[32m<div class="login-content">[m
+[32m+[m			[32m<form action="index.html">[m
+[32m+[m				[32m<img class="icon" src="img/student.png">[m
+[32m+[m				[32m<h2 class="title">Controle de acesso</h2>[m
+[32m+[m[41m           [m		[32m<div class="input-div one">[m
+[32m+[m[41m           [m		[32m   <div class="i">[m
+[32m+[m[41m           [m		[41m   [m		[32m<i class="fas fa-user"></i>[m
+[32m+[m[41m           [m		[32m   </div>[m
+[32m+[m[41m           [m		[32m   <div class="div">[m
+[32m+[m[41m           [m		[41m   [m		[32m<h5>Login</h5>[m
+[32m+[m[41m           [m		[41m   [m		[32m<input type="text" class="input">[m
+[32m+[m[41m           [m		[32m   </div>[m
+[32m+[m[41m           [m		[32m</div>[m
+[32m+[m[41m           [m		[32m<div class="input-div pass">[m
+[32m+[m[41m           [m		[32m   <div class="i">[m[41m [m
+[32m+[m[41m           [m		[41m    [m	[32m<i class="fas fa-lock"></i>[m
+[32m+[m[41m           [m		[32m   </div>[m
+[32m+[m[41m           [m		[32m   <div class="div">[m
+[32m+[m[41m           [m		[41m    [m	[32m<h5>Senha</h5>[m
+[32m+[m[41m           [m		[41m    [m	[32m<input type="password" class="input">[m
+[32m+[m[41m            [m	[32m   </div>[m
+[32m+[m[41m            [m	[32m</div>[m
+[32m+[m[41m            [m	[32m<a href="#">Esqueceu a senha?</a>[m
+[32m+[m[41m            [m	[32m<input type="submit" class="btn" value="Acessar">[m
+[32m+[m[32m            </form>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m    <script type="text/javascript" src="oi.js"></script>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/oi.js b/oi.js[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c2917eb[m
+[1m--- /dev/null[m
+[1m+++ b/oi.js[m
+[36m@@ -0,0 +1,20 @@[m
+[32m+[m[32mconst inputs = document.querySelectorAll(".input");[m
+[32m+[m
+[32m+[m
+[32m+[m[32mfunction addcl(){[m
+[32m+[m	[32mlet parent = this.parentNode.parentNode;[m
+[32m+[m	[32mparent.classList.add("focus");[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mfunction remcl(){[m
+[32m+[m	[32mlet parent = this.parentNode.parentNode;[m
+[32m+[m	[32mif(this.value == ""){[m
+[32m+[m		[32mparent.classList.remove("focus");[m
+[32m+[m	[32m}[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m[32minputs.forEach(input => {[m
+[32m+[m	[32minput.addEventListener("focus", addcl);[m
+[32m+[m	[32minput.addEventListener("blur", remcl);[m
+[32m+[m[32m});[m
+\ No newline at end of file[m
+[1mdiff --git a/vicente.css b/vicente.css[m
+[1mnew file mode 100644[m
+[1mindex 0000000..72e78ad[m
+[1m--- /dev/null[m
+[1m+++ b/vicente.css[m
+[36m@@ -0,0 +1,234 @@[m
+[32m+[m[32m*{[m
+[32m+[m	[32mpadding: 0;[m
+[32m+[m	[32mmargin: 0;[m
+[32m+[m	[32mbox-sizing: border-box;[m
+[32m+[m[32m}[m
+[32m+[m[32m.icon{[m[41m [m
+[32m+[m[32m    background: url(https://www.evolutivovestibulares.com.br/2020/Content/images/Evolutivo.jpg);[m
+[32m+[m[41m    [m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mbody{[m
+[32m+[m[32m    font-family: 'Poppins', sans-serif;[m
+[32m+[m[32m    overflow: hidden;[m
+[32m+[m[32m    background:url(https://2f4u.fansubs.com.br/wp-content/uploads/2017/07/site-background.jpg);[m
+[32m+[m[32m    background-color: silver;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.wave{[m
+[32m+[m	[32mposition: fixed;[m
+[32m+[m	[32mbottom: 0;[m
+[32m+[m	[32mleft: 0;[m
+[32m+[m	[32mheight: 100%;[m
+[32m+[m	[32mz-index: -1;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.container{[m
+[32m+[m[32m    width: 100vw;[m
+[32m+[m[32m    height: 100vh;[m
+[32m+[m[32m    display: grid;[m
+[32m+[m[32m    grid-template-columns: repeat(2, 1fr);[m
+[32m+[m[32m    grid-gap :7rem;[m
+[32m+[m[32m    padding: 0 2rem;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.img{[m
+[32m+[m	[32mdisplay: flex;[m
+[32m+[m	[32mjustify-content: flex-end;[m
+[32m+[m	[32malign-items: center;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.login-content{[m
+[32m+[m	[32mdisplay: flex;[m
+[32m+[m	[32mjustify-content: flex-start;[m
+[32m+[m	[32malign-items: center;[m
+[32m+[m	[32mtext-align: center;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.img img{[m
+[32m+[m	[32mwidth: 500px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mform{[m
+[32m+[m	[32mwidth: 360px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.login-content img{[m
+[32m+[m[32m    height: 100px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.login-content h2{[m
+[32m+[m	[32mmargin: 15px 0;[m
+[32m+[m	[32mcolor: #333;[m
+[32m+[m	[32mtext-transform: uppercase;[m
+[32m+[m	[32mfont-size: 2.9rem;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.login-content .input-div{[m
+[32m+[m	[32mposition: relative;[m
+[32m+[m[32m    display: grid;[m
+[32m+[m[32m    grid-template-columns: 7% 93%;[m
+[32m+[m[32m    margin: 25px 0;[m
+[32m+[m[32m    padding: 5px 0;[m
+[32m+[m[32m    border-bottom: 2px solid #d9d9d9;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.login-content .input-div.one{[m
+[32m+[m	[32mmargin-top: 0;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.i{[m
+[32m+[m	[32mcolor: #d9d9d9;[m
+[32m+[m	[32mdisplay: flex;[m
+[32m+[m	[32mjustify-content: center;[m
+[32m+[m	[32malign-items: center;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.i i{[m
+[32m+[m	[32mtransition: .3s;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.input-div > div{[m
+[32m+[m[32m    position: relative;[m
+[32m+[m	[32mheight: 45px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.input-div > div > h5{[m
+[32m+[m	[32mposition: absolute;[m
+[32m+[m	[32mleft: 10px;[m
+[32m+[m	[32mtop: 50%;[m
+[32m+[m	[32mtransform: translateY(-50%);[m
+[32m+[m	[32mcolor: #999;[m
+[32m+[m	[32mfont-size: 18px;[m
+[32m+[m	[32mtransition: .3s;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.input-div:before, .input-div:after{[m
+[32m+[m	[32mcontent: '';[m
+[32m+[m	[32mposition: absolute;[m
+[32m+[m	[32mbottom: -2px;[m
+[32m+[m	[32mwidth: 0%;[m
+[32m+[m	[32mheight: 2px;[m
+[32m+[m	[32mbackground-color: #38d39f;[m
+[32m+[m	[32mtransition: .4s;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.input-div:before{[m
+[32m+[m	[32mright: 50%;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.input-div:after{[m
+[32m+[m	[32mleft: 50%;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.input-div.focus:before, .input-div.focus:after{[m
+[32m+[m	[32mwidth: 50%;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.input-div.focus > div > h5{[m
+[32m+[m	[32mtop: -5px;[m
+[32m+[m	[32mfont-size: 15px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.input-div.focus > .i > i{[m
+[32m+[m	[32mcolor: #38d39f;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.input-div > div > input{[m
+[32m+[m	[32mposition: absolute;[m
+[32m+[m	[32mleft: 0;[m
+[32m+[m	[32mtop: 0;[m
+[32m+[m	[32mwidth: 100%;[m
+[32m+[m	[32mheight: 100%;[m
+[32m+[m	[32mborder: none;[m
+[32m+[m	[32moutline: none;[m
+[32m+[m	[32mbackground: none;[m
+[32m+[m	[32mpadding: 0.5rem 0.7rem;[m
+[32m+[m	[32mfont-size: 1.2rem;[m
+[32m+[m	[32mcolor: #555;[m
+[32m+[m	[32mfont-family: 'poppins', sans-serif;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.input-div.pass{[m
+[32m+[m	[32mmargin-bottom: 4px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32ma{[m
+[32m+[m	[32mdisplay: block;[m
+[32m+[m	[32mtext-align: right;[m
+[32m+[m	[32mtext-decoration: none;[m
+[32m+[m	[32mcolor: #999;[m
+[32m+[m	[32mfont-size: 0.9rem;[m
+[32m+[m	[32mtransition: .3s;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32ma:hover{[m
+[32m+[m	[32mcolor: #38d39f;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.btn{[m
+[32m+[m	[32mdisplay: block;[m
+[32m+[m	[32mwidth: 100%;[m
+[32m+[m	[32mheight: 50px;[m
+[32m+[m	[32mborder-radius: 25px;[m
+[32m+[m	[32moutline: none;[m
+[32m+[m	[32mborder: none;[m
+[32m+[m	[32mbackground-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);[m
+[32m+[m	[32mbackground-size: 200%;[m
+[32m+[m	[32mfont-size: 1.2rem;[m
+[32m+[m	[32mcolor: #fff;[m
+[32m+[m	[32mfont-family: 'Poppins', sans-serif;[m
+
+
+oiiiiiiiiiiiiiiiii
+[32m+[m	[32mtext-transform: uppercase;[m
+[32m+[m	[32mmargin: 1rem 0;[m
+[32m+[m	[32mcursor: pointer;[m
+[32m+[m	[32mtransition: .5s;[m
+[32m+[m[32m}[m
+[32m+[m[32m.btn:hover{[m
+[32m+[m	[32mbackground-position: right;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m[32m@media screen and (max-width: 1050px){[m
+[32m+[m	[32m.container{[m
+[32m+[m		[32mgrid-gap: 5rem;[m
+[32m+[m	[32m}[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m@media screen and (max-width: 1000px){[m
+[32m+[m	[32mform{[m
+[32m+[m		[32mwidth: 290px;[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m.login-content h2{[m
+[32m+[m[32m        font-size: 2.4rem;[m
+[32m+[m[32m        margin: 8px 0;[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m.img img{[m
+[32m+[m		[32mwidth: 400px;[m
+[32m+[m	[32m}[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m@media screen and (max-width: 900px){[m
+[32m+[m	[32m.container{[m
+[32m+[m		[32mgrid-template-columns: 1fr;[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m.img{[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m    align-items: center;[m
+[32m+[m[32m    justify-content: center;[m
+[32m+[m[41m   [m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m.wave{[m
+[32m+[m		[32mdisplay: none;[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m.login-content{[m
+[32m+[m[32m        justify-content: center;[m
+[32m+[m[41m    [m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[41m    [m
+[32m+[m[32m}[m
+\ No newline at end of file[m
